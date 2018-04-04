@@ -99,15 +99,20 @@ const mapStateToProps = (state: ReduxStateType) => ({
 
 5. Adjust the button text based on the value of `props.isLoggedIn`
     * If `props.override` is provided, show the corresponding text
-    * Otherwise,
+    * If it is not provided,
         * If `props.isLoggedIn` is true, show "Log Out"
         * If it's false, show "Log In"
 
 6. On click of the button, `window.alert(message)` to display a custom message.
     * If `props.override` is provided, alert a message based on its value
-    * Otherwise,
+    * If it is not provided,
         * If `props.isLoggedIn` is true, alert "Logging you out..."
         * If it's false, show "Logging you in..."
 
 # I'm done, what do I do now?
-Good work! 😄 Now, create a git repository of the project, upload it to GitHub, and shoot a message to the #dev Slack channel with a link to your repo. Someone on the team will review your code and get back to you asap.
+Good work! 😄 Here are the next steps.
+1. Verify that your solution works for all cases (e.g. both values of `isLoggedIn` and all three values of `override`)
+2. Compare your solution with the solution in `SOLUTIONS.md`. If you have any questions, ask them on the #dev channel on Slack.
+3. Upload your completed project to GitHub and send the repo link to the #dev channel.
+
+Someone will then review your code and get back to you asap about moving forward.
