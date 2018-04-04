@@ -77,19 +77,9 @@ _A button that renders either "Log In", "Log Out", or "Sign Up Now" and processe
 
 ### Requirements
 1. is written in `src/js/components/LogInButton.js`
-2. the default export is a Redux-connected React component that renders a primary-styled `Button`
-    * [What does a Redux-connected component mean and how do I connect?](https://redux.js.org/basics/usage-with-react)
-    * For now, just use the following function for `mapStateToProps()` to avoid adding too much overhead work to this task.
-
-```javascript
-const mapStateToProps = (state: ReduxStateType) => ({
-  isLoggedIn: true 
-  // manually change this to false if you need to test the button behavior for logged-out users
-})
-```
-
+2. the default export is a React component that renders a primary-styled `Button`
 3. Provide the following props for the component
-    * `isLoggedIn` -- a required boolean; this is a prop that we don't need to provide while using `<LogInButton />`. Instead, it's injected into the component's props by `react-redux` via the `mapStateToProps` function we wrote in step 2.
+    * `isLoggedIn` -- a required boolean; this is usually a prop that we don't need to provide while using `<LogInButton />` because it is injected by Redux. This tutorial doesn't cover Redux so we'll treat it as an actual prop to be used like `<LogInButton isLoggedIn={true} />`.
     * `override` -- an optional string that can be either `login`, `logout`, or `signup`
         * This prop can be used to override the behavior of the button instead of letting the button determine what to render and do when clicked based on `isLoggedIn`
 
