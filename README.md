@@ -73,7 +73,7 @@ _This is how you should be able to use the Button component._
 ```
 
 ## LogInButton
-_Looks simple on the surface, but the logic behind this component is fairly complex. Also, as you probably see coming, this component imports and uses the `Button` component from above._
+_A button that renders either "Log In", "Log Out", or "Sign Up Now" and processes the action when the user clicks on it. Composed of the `Button` component from above._
 
 ### Requirements
 1. is written in `src/js/components/LogInButton.js`
